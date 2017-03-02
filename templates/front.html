@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Homework 3 Blog</title>
+  </head>
+
+  <body>
+    <h2>Welcome to our new awesome blog!</h2>
+    <hr>
+    {% for i in blogs %}
+      {{ i.render() | safe }}
+      <br><br>
+    {% endfor %}
+  </body>
+</html>

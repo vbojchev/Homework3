@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>New Post Creation</title>
+    <style type="text/css">
+      div {margin-top: 5px}
+      .error {color: red}
+    </style>
+  </head>
+
+  <body>
+    <h2>Please write your new post</h2>
+    <form method="post">
+      <div>Enter the Subject</div>
+      <input type="text" name="subject" value="{{subject}}">
+      <div>Enter the Content</div>
+      <textarea name="content" style="height: 100px; width: 400px;">{{content}}</textarea>
+      <br>
+      <div class="error">{{error}}</div>
+      <input type="submit">
+    </form>
+
+    
+  </body>
+
+</html>
